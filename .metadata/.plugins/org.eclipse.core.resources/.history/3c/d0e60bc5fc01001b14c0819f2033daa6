@@ -1,0 +1,30 @@
+package com.senior.avaliacao.qs1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NotaFiscal implements INotaFiscal {
+
+	@Override
+	public List<Double> geraParcelas(int nrParcelas, double valorTotal) {
+		List<Double> Parcelas = new ArrayList<Double>();
+		double VlrParcela = nrParcelas / valorTotal;
+		
+		for (int i = 0; i<nrParcelas; i++) {
+			Parcelas.add(VlrParcela);
+		}
+		
+		return Parcelas;
+	}
+	
+	public void exibirParcelas(List<Double>list) {
+		for (int i = 0; i<list.size(); i++) {
+			System.out.printf("Valor das parcelas %.2f%n", list.get(i) ;
+		}
+	}
+}		
+		
+		
+		
+		
+		

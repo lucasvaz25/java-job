@@ -1,0 +1,13 @@
+package com.senior.avaliacao.qs1;
+
+import java.util.List;
+
+public class NotaFiscal implements INotaFiscal {
+
+	@Override
+	public List<Double> geraParcelas(int nrParcelas, double valorTotal) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

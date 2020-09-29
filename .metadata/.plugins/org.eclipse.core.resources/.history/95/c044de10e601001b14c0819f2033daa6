@@ -1,0 +1,13 @@
+package com.senior.avaliacao.qs1;
+
+import java.util.Scanner;
+public class program {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int tParcelas;
+		Double ValorTotal;
+		System.out.println('Entre com o valor da nota:');
+		ValorTotal = sc.nextDouble();
+		
+	}
+}

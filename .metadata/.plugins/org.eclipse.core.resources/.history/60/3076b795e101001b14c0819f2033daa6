@@ -1,0 +1,15 @@
+package com.senior.avaliacao.qs1;
+
+import java.util.List;
+
+public class NotaFiscal implements INotaFiscal {
+
+	@Override
+	public List<Double> geraParcelas(int nrParcelas, double valorTotal) {
+		List<Double> Parcelas = new ArrayList<Double>();
+		
+		
+		return Parcelas;
+	}
+
+}

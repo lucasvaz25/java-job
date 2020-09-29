@@ -1,0 +1,5 @@
+package com.senior.avaliacao.qs1;
+
+public class NotaFiscal implements INotaFiscal {
+
+}

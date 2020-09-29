@@ -1,0 +1,25 @@
+package com.senior.avaliacao.qs1;
+
+import java.util.Scanner;
+import java.util.List;
+import java.util.Locale;
+
+public class program {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		INotaFiscal nf = new NotaFiscal();
+		
+		System.out.println("Entre com o valor da nota:");
+		Double ValorTotal = sc.nextDouble();
+		System.out.println("Entre com a quantidade de parcelas:");
+		int tParcelas = sc.nextInt();
+		List<Double> list = nf.geraParcelas(tParcelas, ValorTotal);
+		System.out.printf("Total de Parcelas: %d ",tParcelas);
+		System.out.println();
+		for (int i = 0; i<list.size(); i++) {
+			System.out.printf("Valor das parcelas: %.2f%d, parcela: %d", list.get(i), i );
+			System.out.println();
+		}
+	}
+}
